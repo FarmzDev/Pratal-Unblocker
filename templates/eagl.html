@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.filesizejs.com/filesize.min.js" defer></script>
+    <style>*{font-family: "Inter", sans-serif;color-scheme: dark;font-weight: 400;}</style>
+    <style>.text-bold{font-family: "Inter", sans-serif;color-scheme: dark !important;font-weight: 700;}</style>
+    <title>Pratal - Choose your client</title>
+    <style>
+        .underline-animation {
+          position: relative;
+          display: inline-block;
+          text-decoration: none;
+        }
+    
+        .underline-animation::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 2px;
+          width: 100%;
+          background-color: #FFFFFF;
+          transform: scaleX(0);
+          transform-origin: bottom right;
+          transition: transform 0.1s ease-out;
+        }
+    
+        .underline-animation:hover::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+        }
+
+        .game-tile {
+            background-size: inherit;
+            position: relative;
+            transition: background-size 0.1s ease-out;
+        }
+        .game-tile:hover {
+            background-size: 1000px;
+          }
+      </style>
+</head>
+<body class="bg-fixed bg-[url('{{ url_for('static', filename='background.jpg') }}')] bg-[center_top_-3rem] bg-no-repeat bg-cover">
+    <div class="fixed backdrop-blur-lg w-screen h-screen">
+        <h1 class="flex flex-col items-center justify-center text-center text-6xl text-bold drop-shadow-md mt-5 mb-10">CHOOSE YOUR CLIENT</h1>
+        <div class="flex px-3 gap-x-3">
+            <div class="w-[20%] h-[300px] bg-[url('/static/1.8.8.webp')] flex flex-col items-center justify-center bg-center rounded-md game-tile bg-[length:800px]">
+                <p class="text-2xl text-bold text-white">EAGLERCRAFT 1.8.8</p>
+                <select id="1.8.8-client" class="dark:bg-zinc-900/25 bg-white/25 h-8 rounded-md md:w-[200px] dark:border-zinc-900/25 border-white/50 backdrop-blur-md border px-2">
+                    <option value="u27">u27 (Latest)</option>
+                    <option value="u26">u26</option>
+                    <option value="u25">u25</option>
+                    <option value="u24">u24</option>
+                    <option value="u23">u23</option>
+                    <option value="u22">u22</option>
+                    <option value="u21">u21</option>
+                    <option value="u20">u20</option>
+                    <option value="u19">u19</option>
+                    <option value="u18">u18</option>
+                    <option value="u17">u17</option>
+                    <option value="u16">u16</option>
+                    <option value="u15">u15</option>
+                    <option value="u14">u14</option>
+                    <option value="u13">u13</option>
+                    <option value="u12">u12</option>
+                    <option value="u11">u11</option>
+                    <option value="u10">u10</option>
+                    <option value="u9">u9</option>
+                    <option value="u8">u8</option>
+                    <option value="u7">u7</option>
+                    <option value="u6">u6</option>
+                    <option value="u5">u5</option>
+                    <option value="u4">u4</option>
+                    <option value="u3">u3</option>
+                    <option value="u2">u2</option>
+                    <option value="u1">u1</option>
+                    <option value="u0">u0</option>
+                    <option value="rc-03">rc-03</option>
+                    <option value="rc-02">rc-02</option>
+                    <option value="rc-01">rc-01</option>
+                </select>
+                <button class="dark:bg-zinc-900/25 bg-white/25 h-8 rounded-md w-[100px] my-2 dark:border-zinc-900/25 border-white/50 backdrop-blur-md border px-2 hover:bg-zinc-900/40 transition-all" onclick="enterEaglerClient('Eaglercraft 1.8.8', document.getElementById('1.8.8-client').value);">LAUNCH</button>
+            </div>
+            <div class="w-[20%] h-[300px] bg-[url('/static/1.5.2.webp')] flex flex-col items-center justify-center bg-center rounded-md game-tile bg-[length:800px]">
+                <p class="text-2xl text-bold">EAGLERCRAFT 1.5.2</p>
+                <select id="1.5.2-client" class="dark:bg-zinc-900/25 bg-white/25 h-8 rounded-md md:w-[200px] dark:border-zinc-900/25 border-white/50 backdrop-blur-md border px-2">
+                    <option value="22w43a">22w43a (Latest)</option>
+                    <option value="22w42c">22w42c</option>
+                    <option value="22w42b">22w42b</option>
+                    <option value="22w42a">22w42a</option>
+                    <option value="22w41a">22w41a</option>
+                    <option value="22w40a">22w40a</option>
+                    <option value="22w38a">22w38a</option>
+                    <option value="22w36a">22w36a</option>
+                    <option value="22w35c">22w35c</option>
+                    <option value="22w35b">22w35b</option>
+                    <option value="22w35a">22w35a</option>
+                    <option value="22w34d">22w34d</option>
+                    <option value="22w34c">22w34c</option>
+                    <option value="22w34b">22w34b</option>
+                    <option value="22w34a">22w34a</option>
+                    <option value="22w30a">22w30a</option>
+                    <option value="22w29b">22w29b</option>
+                    <option value="22w29a">22w29a</option>
+                    <option value="22w23c">22w23c</option>
+                    <option value="22w23b">22w23b</option>
+                    <option value="22w23a">22w23a</option>
+                    <option value="22w22a">22w22a</option>
+                    <option value="22w20b">22w20b</option>
+                    <option value="22w20a">22w20a</option>
+                    <option value="22w19a">22w19a</option>
+                    <option value="22w16h">22w16h</option>
+                    <option value="22w16g">22w16g</option>
+                    <option value="22w16f">22w16f</option>
+                    <option value="22w16e">22w16e</option>
+                    <option value="22w16d">22w16d</option>
+                    <option value="22w16c">22w16c</option>
+                    <option value="22w16b">22w16b</option>
+                    <option value="22w16a">22w16a</option>
+                    <option value="22w15d">22w15d</option>
+                    <option value="22w15c">22w15c</option>
+                    <option value="22w15b">22w15b</option>
+                    <option value="22w15a">22w15a</option>
+                    <option value="22w14d">22w14d</option>
+                    <option value="22w14c">22w14c</option>
+                    <option value="22w14b">22w14b</option>
+                    <option value="22w14a">22w14a</option>
+                    <option value="22w13i">22w13i</option>
+                    <option value="22w13h">22w13h</option>
+                    <option value="22w13g">22w13g</option>
+                    <option value="22w13f">22w13f</option>
+                    <option value="22w13e">22w13e</option>
+                    <option value="22w13d">22w13d</option>
+                    <option value="22w13c">22w13c</option>
+                    <option value="22w13b">22w13b</option>
+                    <option value="22w13a">22w13a</option>
+                    <option value="22w10d">22w10d</option>
+                    <option value="22w10c">22w10c</option>
+                    <option value="22w10b">22w10b</option>
+                    <option value="22w10a">22w10a</option>
+                    <option value="22w07a">22w07a</option>
+                    <option value="22w04b">22w04b</option>
+                    <option value="22w04a">22w04a</option>
+                    <option value="22w03c">22w03c</option>
+                    <option value="22w03b">22w03b</option>
+                    <option value="22m03a">22m03a</option>
+                    <option value="22m02a">22m02a</option>
+                    <option value="22m01a">22m01a</option>
+                    <option value="21m12-24">21m12-24</option>
+                    <option value="21m12-17">21m12-17</option>
+                    <option value="20m06-29">20m06-29</option>
+                    <option value="sp1">sp1</option>
+                    <option value="sp1.01">sp1.01</option>
+                </select>
+                <button class="dark:bg-zinc-900/25 bg-white/25 h-8 rounded-md w-[100px] my-2 dark:border-zinc-900/25 border-white/50 backdrop-blur-md border px-2 hover:bg-zinc-900/40 transition-all" onclick="enterEaglerClient('Eaglercraft 1.5.2', document.getElementById('1.5.2-client').value);">LAUNCH</button>
+            </div>
+            <div class="w-[20%] h-[300px] bg-[url('/static/ayuncraft.png')] flex flex-col items-center justify-center bg-center rounded-md game-tile bg-[length:800px]">
+                <p class="text-2xl text-bold">AYUNCRAFT [1.5.2]</p>
+                <button class="dark:bg-zinc-900/25 bg-white/25 h-8 rounded-md w-[100px] my-2 dark:border-zinc-900/25 border-white/50 backdrop-blur-md border px-2 hover:bg-zinc-900/40 transition-all" onclick="enterEaglerClient('Ayuncraft', 'v1');">LAUNCH</button>
+            </div>
+        </div>
+    </div>
+    <script>logo = "{{ url_for('static', filename='pratal.png') }}"</script>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
