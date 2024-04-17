@@ -15,5 +15,3 @@ def games():
 @app.route("/g/eg")
 def eaglercraft():
     return render_template("eagl.html")
-
-app.run(port=80, debug=True)
