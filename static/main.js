@@ -133,6 +133,12 @@ var clients = {"Eaglercraft 1.8.8": {
     "21m12-17": "eagler_1.5.2_21m12-17",
     "20m06-29": "eagler_1.5.2_20m06-29",
 },
+"Eaglercraft b1.3": {
+    "22w49a": "eagler_b1.3_22w49a",
+    "22w22b": "eagler_b1.3_22w22b",
+    "22w22a": "eagler_b1.3_22w22a",
+    "22w17a": "eagler_b1.3_22w17a",
+},
 "Ayuncraft": {
     "v1": "ayuncraft_1.5.2"
 }}
