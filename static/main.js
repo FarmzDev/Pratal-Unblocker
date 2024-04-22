@@ -32,6 +32,8 @@ function openInAboutBlank() {
 }
 
 var clients = {"Eaglercraft 1.8.8": {
+    "u29": "eagler_1.8.8_u29",
+    "u28": "eagler_1.8.8_u28",
     "u27": "eagler_1.8.8_u27", 
     "u26": "eagler_1.8.8_u26",
     "u25": "eagler_1.8.8_u25",
